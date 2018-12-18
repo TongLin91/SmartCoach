@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */; };
-		0621BA1E21C9B1CE00A3399B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA1D21C9B1CE00A3399B /* ViewController.swift */; };
-		0621BA2121C9B1CE00A3399B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA1F21C9B1CE00A3399B /* Main.storyboard */; };
 		0621BA2321C9B1D100A3399B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA2221C9B1D100A3399B /* Assets.xcassets */; };
 		0621BA2621C9B1D100A3399B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */; };
 		0621BA3121C9B1D100A3399B /* SmartCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3021C9B1D100A3399B /* SmartCoachTests.swift */; };
+		0621BA3E21C9B2CA00A3399B /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */; };
+		0621BA4021C9B32100A3399B /* CoachRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3F21C9B32100A3399B /* CoachRouter.swift */; };
+		0621BA4221C9B37D00A3399B /* CoachInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4121C9B37D00A3399B /* CoachInterector.swift */; };
+		0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */; };
+		0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */; };
+		0621BA4821C9B44B00A3399B /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA4721C9B44B00A3399B /* achievements.json */; };
+		0621BA4B21C9B74A00A3399B /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4A21C9B74A00A3399B /* CoachModel.swift */; };
+		0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4C21C9B76B00A3399B /* AchievementModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +34,20 @@
 /* Begin PBXFileReference section */
 		0621BA1821C9B1CE00A3399B /* SmartCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0621BA1D21C9B1CE00A3399B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0621BA2021C9B1CE00A3399B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0621BA2221C9B1D100A3399B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0621BA2521C9B1D100A3399B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0621BA2721C9B1D100A3399B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0621BA2C21C9B1D100A3399B /* SmartCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0621BA3021C9B1D100A3399B /* SmartCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCoachTests.swift; sourceTree = "<group>"; };
 		0621BA3221C9B1D100A3399B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		0621BA3F21C9B32100A3399B /* CoachRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRouter.swift; sourceTree = "<group>"; };
+		0621BA4121C9B37D00A3399B /* CoachInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachInterector.swift; sourceTree = "<group>"; };
+		0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenter.swift; sourceTree = "<group>"; };
+		0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachProtocols.swift; sourceTree = "<group>"; };
+		0621BA4721C9B44B00A3399B /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = SOURCE_ROOT; };
+		0621BA4A21C9B74A00A3399B /* CoachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
+		0621BA4C21C9B76B00A3399B /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */,
-				0621BA1D21C9B1CE00A3399B /* ViewController.swift */,
-				0621BA1F21C9B1CE00A3399B /* Main.storyboard */,
+				0621BA3B21C9B26800A3399B /* Modules */,
+				0621BA4721C9B44B00A3399B /* achievements.json */,
 				0621BA2221C9B1D100A3399B /* Assets.xcassets */,
 				0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */,
 				0621BA2721C9B1D100A3399B /* Info.plist */,
@@ -94,6 +106,36 @@
 				0621BA3221C9B1D100A3399B /* Info.plist */,
 			);
 			path = SmartCoachTests;
+			sourceTree = "<group>";
+		};
+		0621BA3B21C9B26800A3399B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA3C21C9B29300A3399B /* Coach */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0621BA3C21C9B29300A3399B /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA4921C9B73400A3399B /* Models */,
+				0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */,
+				0621BA3F21C9B32100A3399B /* CoachRouter.swift */,
+				0621BA4121C9B37D00A3399B /* CoachInterector.swift */,
+				0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */,
+				0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		0621BA4921C9B73400A3399B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA4A21C9B74A00A3399B /* CoachModel.swift */,
+				0621BA4C21C9B76B00A3399B /* AchievementModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0621BA2621C9B1D100A3399B /* LaunchScreen.storyboard in Resources */,
+				0621BA4821C9B44B00A3399B /* achievements.json in Resources */,
 				0621BA2321C9B1D100A3399B /* Assets.xcassets in Resources */,
-				0621BA2121C9B1CE00A3399B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0621BA1E21C9B1CE00A3399B /* ViewController.swift in Sources */,
+				0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */,
 				0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */,
+				0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */,
+				0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */,
+				0621BA4221C9B37D00A3399B /* CoachInterector.swift in Sources */,
+				0621BA3E21C9B2CA00A3399B /* CoachViewController.swift in Sources */,
+				0621BA4B21C9B74A00A3399B /* CoachModel.swift in Sources */,
+				0621BA4021C9B32100A3399B /* CoachRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0621BA1F21C9B1CE00A3399B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0621BA2021C9B1CE00A3399B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
