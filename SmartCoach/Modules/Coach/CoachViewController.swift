@@ -28,11 +28,9 @@ class CoachViewController: UIViewController {
     func set(_ achievements: [AchievementModel]) {
         dataSource.achievements = achievements
         collectionView.reloadData()
-        if achievements.isEmpty {
-            // no result view if need
-        }
     }
     
+    // MARK: - private
     private func setup() {
         navigationItem.title = "Smart Investing"
         navigationItem.leftBarButtonItem = backBarButton
@@ -54,6 +52,7 @@ class CoachViewController: UIViewController {
     }()
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension CoachViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         

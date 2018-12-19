@@ -13,13 +13,15 @@ public typealias CompletionHandler = (_ data: Data?,_ error: Error?)->()
 class NetworkManager {
     class func fetchAchievements() -> AchievementResponse? {
         do {
-            let file = Bundle.main.url(forResource: "achievements", withExtension: "json")!
-            let data = try Data(contentsOf: file)
-            let response = try JSONDecoder().decode(AchievementResponse.self, from: data)
-                
-            return response
+            if let file = Bundle.main.url(forResource: "achievements", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let response = try JSONDecoder().decode(AchievementResponse.self, from: data)
+                return response
+            } else {
+                SCLogger("Can not find achievements.json file", for: .error)
+            }
         } catch {
-            SCLogger("Fail to generate achievement request", for: .fault)
+            SCLogger("Fail to generate achievement request", for: .error)
         }
         return nil
     }

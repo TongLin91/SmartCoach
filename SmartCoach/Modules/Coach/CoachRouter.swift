@@ -8,14 +8,11 @@
 
 import UIKit
 
-class CoachRouter {
-    static private var storyboard: UIStoryboard {
-        return UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
-    }
+final class CoachRouter {
+    static private var storyboard: UIStoryboard = UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
     
     class func makeCoachViewController() -> UIViewController {
         let coachVC = storyboard.instantiateInitialViewController() as! CoachViewController
-        
         let presenter = CoachPresenter(view: coachVC, router: CoachRouter())
         let interactor = CoachInterector()
         

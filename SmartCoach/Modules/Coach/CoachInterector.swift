@@ -17,7 +17,7 @@ class CoachInterector {
         if response.success {
             presenter?.update(response.achievements)
         } else {
-            SCLogger("Achievement request fail with error: \(response.status)", for: .error)
+            SCLogger("Achievement request fail with error", for: .error)
         }
     }
 }

@@ -45,8 +45,8 @@ class AchievementCollectionViewCell: UICollectionViewCell {
         
         if let imageURL = URL(string: achievement.backgroundImageURL) {
             NetworkManager.downloadImage(imageURL) { (data, error) in
-                if let error = error {
-                    SCLogger(error.localizedDescription, for: .error)
+                if let _ = error {
+                    SCLogger("Image request fail with error", for: .error)
                 } else if let data = data {
                     DispatchQueue.main.async {
                         self.backgroundImageView.image = UIImage(data: data)

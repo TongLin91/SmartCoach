@@ -9,8 +9,7 @@
 import os
 
 class SCLogger {
-    @discardableResult init(_ message: String, for type: OSLogType) {
-        let text = message.copy() as! StaticString
-        os_log(text, log: .default, type: type)
+    @discardableResult init(_ message: StaticString, for type: OSLogType) {
+        os_log(message, log: .default, type: type)
     }
 }
