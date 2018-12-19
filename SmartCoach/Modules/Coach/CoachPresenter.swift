@@ -22,7 +22,7 @@ class CoachPresenter {
         interector.fetchAchievements()
     }
     
-    func fetchAchievements(modle: [AchievementModel]) {
-
+    func update(_ achievements: [AchievementModel]) {
+        view?.set(achievements)
     }
 }

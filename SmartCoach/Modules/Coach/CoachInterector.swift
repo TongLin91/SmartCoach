@@ -16,6 +16,12 @@ class CoachInterector {
     }
     
     func fetchAchievements() {
-
+        guard let response = NetworkManager.fetchAchievements() else { return }
+        
+        if response.success {
+            presenter?.update(response.achievements)
+        } else {
+            SCLogger("Achievement request fail with error: \(response.status)", for: .error)
+        }
     }
 }

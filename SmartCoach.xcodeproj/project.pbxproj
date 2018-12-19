@@ -19,7 +19,12 @@
 		0621BA4821C9B44B00A3399B /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA4721C9B44B00A3399B /* achievements.json */; };
 		0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4C21C9B76B00A3399B /* AchievementModel.swift */; };
 		0621BA4F21C9B81600A3399B /* CoachViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */; };
-		0621BA5221C9C11B00A3399B /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5121C9C11B00A3399B /* JSONReader.swift */; };
+		0621BA5221C9C11B00A3399B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5121C9C11B00A3399B /* NetworkManager.swift */; };
+		0621BA5421C9F42B00A3399B /* SCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5321C9F42B00A3399B /* SCLogger.swift */; };
+		0621BA5621C9FD0200A3399B /* AchievementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5521C9FD0200A3399B /* AchievementResponse.swift */; };
+		0621BA5821C9FFE100A3399B /* CoachDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5721C9FFE100A3399B /* CoachDataSource.swift */; };
+		0621BA5A21CA033500A3399B /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */; };
+		0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,12 @@
 		0621BA4721C9B44B00A3399B /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = SOURCE_ROOT; };
 		0621BA4C21C9B76B00A3399B /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
 		0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoachViewController.storyboard; sourceTree = "<group>"; };
-		0621BA5121C9C11B00A3399B /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		0621BA5121C9C11B00A3399B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0621BA5321C9F42B00A3399B /* SCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLogger.swift; sourceTree = "<group>"; };
+		0621BA5521C9FD0200A3399B /* AchievementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementResponse.swift; sourceTree = "<group>"; };
+		0621BA5721C9FFE100A3399B /* CoachDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDataSource.swift; sourceTree = "<group>"; };
+		0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +135,11 @@
 				0621BA4921C9B73400A3399B /* Models */,
 				0621BA3F21C9B32100A3399B /* CoachRouter.swift */,
 				0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */,
+				0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */,
 				0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */,
 				0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */,
 				0621BA4121C9B37D00A3399B /* CoachInterector.swift */,
+				0621BA5721C9FFE100A3399B /* CoachDataSource.swift */,
 				0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */,
 			);
 			path = Coach;
@@ -136,6 +148,7 @@
 		0621BA4921C9B73400A3399B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0621BA5521C9FD0200A3399B /* AchievementResponse.swift */,
 				0621BA4C21C9B76B00A3399B /* AchievementModel.swift */,
 			);
 			path = Models;
@@ -144,7 +157,9 @@
 		0621BA5021C9C0FC00A3399B /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				0621BA5121C9C11B00A3399B /* JSONReader.swift */,
+				0621BA5121C9C11B00A3399B /* NetworkManager.swift */,
+				0621BA5321C9F42B00A3399B /* SCLogger.swift */,
+				0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -251,13 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0621BA5221C9C11B00A3399B /* JSONReader.swift in Sources */,
+				0621BA5421C9F42B00A3399B /* SCLogger.swift in Sources */,
+				0621BA5221C9C11B00A3399B /* NetworkManager.swift in Sources */,
 				0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */,
 				0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */,
+				0621BA5621C9FD0200A3399B /* AchievementResponse.swift in Sources */,
 				0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */,
+				0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */,
 				0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */,
 				0621BA4221C9B37D00A3399B /* CoachInterector.swift in Sources */,
+				0621BA5821C9FFE100A3399B /* CoachDataSource.swift in Sources */,
 				0621BA3E21C9B2CA00A3399B /* CoachViewController.swift in Sources */,
+				0621BA5A21CA033500A3399B /* AchievementCollectionViewCell.swift in Sources */,
 				0621BA4021C9B32100A3399B /* CoachRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
