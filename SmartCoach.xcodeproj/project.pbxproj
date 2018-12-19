@@ -25,6 +25,9 @@
 		0621BA5821C9FFE100A3399B /* CoachDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5721C9FFE100A3399B /* CoachDataSource.swift */; };
 		0621BA5A21CA033500A3399B /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */; };
 		0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */; };
+		0621BA5F21CA10D300A3399B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5E21CA10D300A3399B /* MainNavigationController.swift */; };
+		0621BA6121CA110500A3399B /* UIColor+SC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6021CA110500A3399B /* UIColor+SC.swift */; };
+		0621BA6321CA147F00A3399B /* UIView+SC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6221CA147F00A3399B /* UIView+SC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		0621BA5721C9FFE100A3399B /* CoachDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDataSource.swift; sourceTree = "<group>"; };
 		0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
 		0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressView.swift; sourceTree = "<group>"; };
+		0621BA5E21CA10D300A3399B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		0621BA6021CA110500A3399B /* UIColor+SC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SC.swift"; sourceTree = "<group>"; };
+		0621BA6221CA147F00A3399B /* UIView+SC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */,
+				0621BA5D21CA10BB00A3399B /* Infrastructures */,
 				0621BA5021C9C0FC00A3399B /* Configuration */,
 				0621BA3B21C9B26800A3399B /* Modules */,
 				0621BA4721C9B44B00A3399B /* achievements.json */,
@@ -159,9 +166,19 @@
 			children = (
 				0621BA5121C9C11B00A3399B /* NetworkManager.swift */,
 				0621BA5321C9F42B00A3399B /* SCLogger.swift */,
-				0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		0621BA5D21CA10BB00A3399B /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */,
+				0621BA5E21CA10D300A3399B /* MainNavigationController.swift */,
+				0621BA6021CA110500A3399B /* UIColor+SC.swift */,
+				0621BA6221CA147F00A3399B /* UIView+SC.swift */,
+			);
+			path = Infrastructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0621BA6121CA110500A3399B /* UIColor+SC.swift in Sources */,
 				0621BA5421C9F42B00A3399B /* SCLogger.swift in Sources */,
 				0621BA5221C9C11B00A3399B /* NetworkManager.swift in Sources */,
 				0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */,
+				0621BA6321CA147F00A3399B /* UIView+SC.swift in Sources */,
 				0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */,
+				0621BA5F21CA10D300A3399B /* MainNavigationController.swift in Sources */,
 				0621BA5621C9FD0200A3399B /* AchievementResponse.swift in Sources */,
 				0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */,
 				0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */,

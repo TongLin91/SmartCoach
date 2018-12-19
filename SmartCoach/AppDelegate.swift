@@ -15,13 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let coachNC = CoachRouter.makeCoachNavigationController()
+        UINavigationBar.appearance().barStyle = .blackOpaque
+        presentCoachViewController()
         
+        return true
+    }
+    
+    func presentCoachViewController() {
+        let coachNC = CoachRouter.makeCoachNavigationController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coachNC
         window?.makeKeyAndVisible()
-        
-        return true
     }
 }
 

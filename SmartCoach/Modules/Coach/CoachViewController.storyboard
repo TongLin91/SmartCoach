@@ -19,7 +19,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sxx-6O-Sp3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="10" id="Sau-z7-LD4">
                                     <size key="itemSize" width="292" height="167"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -41,23 +41,23 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="292" height="167"/>
                                                         </imageView>
                                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KZd-py-T7s" customClass="SCProgressView" customModule="SmartCoach" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="103.5" width="272" height="8"/>
+                                                            <rect key="frame" x="15" y="103.5" width="262" height="8"/>
                                                             <color key="tintColor" red="0.45882352939999999" green="0.77647058820000003" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="8" id="fhP-rX-noy"/>
                                                             </constraints>
                                                         </progressView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-MR-qNH">
-                                                            <rect key="frame" x="10" y="126.5" width="272" height="20.5"/>
+                                                            <rect key="frame" x="15" y="126.5" width="262" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-v6-YPz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="101.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="96.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZB-5E-6ub">
-                                                                    <rect key="frame" x="170.5" y="0.0" width="101.5" height="20.5"/>
+                                                                    <rect key="frame" x="165.5" y="0.0" width="96.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -68,17 +68,17 @@
                                                             <rect key="frame" x="112" y="20" width="68.5" height="68.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FmW-O6-SBr">
-                                                                    <rect key="frame" x="4.5" y="12.5" width="59.5" height="43.5"/>
+                                                                    <rect key="frame" x="16" y="3" width="36" height="62.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-As-yzS">
-                                                                            <rect key="frame" x="16" y="0.0" width="27.5" height="13.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="18"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-5Y-M7J">
-                                                                            <rect key="frame" x="0.0" y="13.5" width="59.5" height="30"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-5Y-M7J">
+                                                                            <rect key="frame" x="6.5" y="18" width="23" height="44.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -98,14 +98,14 @@
                                                         <constraint firstItem="KZd-py-T7s" firstAttribute="top" secondItem="lnP-g4-raL" secondAttribute="bottom" constant="15" id="0NX-Rm-s00"/>
                                                         <constraint firstItem="lnP-g4-raL" firstAttribute="top" secondItem="DFK-2r-pra" secondAttribute="top" constant="20" id="9S7-x9-l90"/>
                                                         <constraint firstItem="YkP-KA-CQK" firstAttribute="top" secondItem="DFK-2r-pra" secondAttribute="top" id="HKJ-GC-sPw"/>
-                                                        <constraint firstAttribute="trailing" secondItem="A4e-MR-qNH" secondAttribute="trailing" constant="10" id="Hq8-en-9hp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="A4e-MR-qNH" secondAttribute="trailing" constant="15" id="Hq8-en-9hp"/>
                                                         <constraint firstItem="A4e-MR-qNH" firstAttribute="top" secondItem="KZd-py-T7s" secondAttribute="bottom" constant="15" id="Scg-QD-96Z"/>
                                                         <constraint firstItem="KZd-py-T7s" firstAttribute="leading" secondItem="A4e-MR-qNH" secondAttribute="leading" id="VoM-hK-UgK"/>
                                                         <constraint firstAttribute="bottom" secondItem="A4e-MR-qNH" secondAttribute="bottom" constant="20" id="gwg-G5-7MP"/>
                                                         <constraint firstItem="lnP-g4-raL" firstAttribute="centerX" secondItem="DFK-2r-pra" secondAttribute="centerX" id="h9E-Dt-UGw"/>
                                                         <constraint firstItem="YkP-KA-CQK" firstAttribute="leading" secondItem="DFK-2r-pra" secondAttribute="leading" id="ihy-jM-Ut3"/>
                                                         <constraint firstAttribute="trailing" secondItem="YkP-KA-CQK" secondAttribute="trailing" id="lP3-RY-Dnq"/>
-                                                        <constraint firstItem="A4e-MR-qNH" firstAttribute="leading" secondItem="DFK-2r-pra" secondAttribute="leading" constant="10" id="oqQ-fw-wWp"/>
+                                                        <constraint firstItem="A4e-MR-qNH" firstAttribute="leading" secondItem="DFK-2r-pra" secondAttribute="leading" constant="15" id="oqQ-fw-wWp"/>
                                                         <constraint firstItem="KZd-py-T7s" firstAttribute="trailing" secondItem="A4e-MR-qNH" secondAttribute="trailing" id="uCH-Az-L2n"/>
                                                         <constraint firstAttribute="bottom" secondItem="YkP-KA-CQK" secondAttribute="bottom" id="vwT-Zb-AJG"/>
                                                     </constraints>
@@ -123,6 +123,7 @@
                                             <outlet property="achievementProgressView" destination="KZd-py-T7s" id="M6Y-fJ-laj"/>
                                             <outlet property="backgroundImageView" destination="YkP-KA-CQK" id="hg1-dc-RhB"/>
                                             <outlet property="currentProgressLabel" destination="dlD-v6-YPz" id="0ZX-ni-MCA"/>
+                                            <outlet property="levelContainerView" destination="lnP-g4-raL" id="Xae-l2-o1R"/>
                                             <outlet property="levelLabel" destination="Ek2-5Y-M7J" id="jT9-o3-x44"/>
                                             <outlet property="totalProgressLabel" destination="6ZB-5E-6ub" id="7ni-wK-9a9"/>
                                         </connections>
@@ -130,7 +131,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sxx-6O-Sp3" firstAttribute="top" secondItem="m5N-F9-PCs" secondAttribute="top" id="4NP-Mi-tf9"/>
                             <constraint firstItem="sxx-6O-Sp3" firstAttribute="leading" secondItem="m5N-F9-PCs" secondAttribute="leading" id="GZ0-vo-nnT"/>

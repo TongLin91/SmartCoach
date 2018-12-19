@@ -22,7 +22,7 @@ class CoachRouter {
     }
     
     class func makeCoachNavigationController() -> UINavigationController {
-        return UINavigationController(rootViewController: makeCoachViewController())
+        return MainNavigationController(rootViewController: makeCoachViewController())
     }
     
     static var storyboard: UIStoryboard{
