@@ -11,10 +11,6 @@ import Foundation
 class CoachInterector {
     weak var presenter: CoachPresenter?
     
-    init(presenter: CoachPresenter) {
-        self.presenter = presenter
-    }
-    
     func fetchAchievements() {
         guard let response = NetworkManager.fetchAchievements() else { return }
         

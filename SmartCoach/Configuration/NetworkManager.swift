@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias CompletionHandler = (_ data: Data?,_ error: Error?)->()
+
 class NetworkManager {
     class func fetchAchievements() -> AchievementResponse? {
         do {
@@ -20,5 +22,15 @@ class NetworkManager {
             SCLogger("Fail to generate achievement request", for: .fault)
         }
         return nil
+    }
+    
+    class func downloadImage(_ url: URL, completion: @escaping (CompletionHandler)) {
+        let session = URLSession.shared
+        let request = URLRequest(url: url,
+                                 cachePolicy: .returnCacheDataElseLoad,
+                                 timeoutInterval: 10.0)
+        session.dataTask(with: request, completionHandler: { data, _, error in
+            completion(data, error)
+        }).resume()
     }
 }

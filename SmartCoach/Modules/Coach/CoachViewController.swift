@@ -22,7 +22,6 @@ class CoachViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         presenter?.updateView()
     }
     
@@ -30,24 +29,27 @@ class CoachViewController: UIViewController {
         dataSource.achievements = achievements
         collectionView.reloadData()
         if achievements.isEmpty {
+            // no result view if need
         }
     }
     
     private func setup() {
         navigationItem.title = "Smart Investing"
+        navigationItem.leftBarButtonItem = backBarButton
         navigationItem.rightBarButtonItem = infoBarButton
         collectionView.dataSource = dataSource
         collectionView.delegate = self
     }
     
+    // MARK: - Lazy var
+    
     lazy var backBarButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: nil)
+        let button = UIBarButtonItem(image: UIImage(named: "icon_backArrow"), style: .plain, target: self, action: nil)
         return button
     }()
     
     lazy var infoBarButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        
+        let button = UIBarButtonItem(image: UIImage(named: "icon_info"), style: .plain, target: self, action: nil)
         return button
     }()
 }
@@ -58,5 +60,4 @@ extension CoachViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.bounds.size.width * 0.85,
                       height: collectionView.bounds.size.height * 0.29)
     }
-    
 }

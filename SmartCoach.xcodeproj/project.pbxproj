@@ -140,9 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				0621BA4921C9B73400A3399B /* Models */,
+				0621BA6421CA9B3900A3399B /* Cell */,
 				0621BA3F21C9B32100A3399B /* CoachRouter.swift */,
 				0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */,
-				0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */,
 				0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */,
 				0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */,
 				0621BA4121C9B37D00A3399B /* CoachInterector.swift */,
@@ -179,6 +179,14 @@
 				0621BA6221CA147F00A3399B /* UIView+SC.swift */,
 			);
 			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		0621BA6421CA9B3900A3399B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -41,7 +41,19 @@ class AchievementCollectionViewCell: UICollectionViewCell {
         levelLabel.text = achievement.level
         currentProgressLabel.text = "\(achievement.progress) pts"
         totalProgressLabel.text = "\(achievement.total) pts"
-        achievementProgressView.progress = Float(achievement.progress/achievement.total)
+        achievementProgressView.setProgress(Float(achievement.progress)/Float(achievement.total), animated: true)
+        
+        if let imageURL = URL(string: achievement.backgroundImageURL) {
+            NetworkManager.downloadImage(imageURL) { (data, error) in
+                if let error = error {
+                    SCLogger(error.localizedDescription, for: .error)
+                } else if let data = data {
+                    DispatchQueue.main.async {
+                        self.backgroundImageView.image = UIImage(data: data)
+                    }
+                }
+            }
+        }
         
         if !achievement.accessible {
             showBlockView()

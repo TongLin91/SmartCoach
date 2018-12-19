@@ -9,12 +9,17 @@
 import UIKit
 
 class CoachRouter {
+    static private var storyboard: UIStoryboard {
+        return UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
+    }
+    
     class func makeCoachViewController() -> UIViewController {
         let coachVC = storyboard.instantiateInitialViewController() as! CoachViewController
         
         let presenter = CoachPresenter(view: coachVC, router: CoachRouter())
-        let interactor = CoachInterector(presenter: presenter)
+        let interactor = CoachInterector()
         
+        interactor.presenter = presenter
         presenter.interector = interactor
         coachVC.presenter = presenter
 
@@ -23,9 +28,5 @@ class CoachRouter {
     
     class func makeCoachNavigationController() -> UINavigationController {
         return MainNavigationController(rootViewController: makeCoachViewController())
-    }
-    
-    static var storyboard: UIStoryboard{
-        return UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
     }
 }
