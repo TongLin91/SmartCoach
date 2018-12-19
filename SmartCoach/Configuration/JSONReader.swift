@@ -1,5 +1,5 @@
 //
-//  CoachModel.swift
+//  JSONReader.swift
 //  SmartCoach
 //
 //  Created by Tong Lin on 12/18/18.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class JSONReader {
+    
+}

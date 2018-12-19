@@ -6,7 +6,23 @@
 //  Copyright © 2018 TongL. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CoachPresenter {
+    weak var view: CoachViewController?
+    var interector: CoachInterector!
+    var router: CoachRouter
+    
+    init(view: CoachViewController, router: CoachRouter) {
+        self.view = view
+        self.router = router
+    }
+    
+    func updateView() {
+        interector.fetchAchievements()
+    }
+    
+    func fetchAchievements(modle: [AchievementModel]) {
+
+    }
 }
