@@ -18,5 +18,9 @@ class SCProgressView: UIProgressView {
         maskLayer.frame = self.bounds
         maskLayer.path = maskLayerPath.cgPath
         layer.mask = maskLayer
+        
+        // This is so sketch
+        layer.sublayers![1].cornerRadius = 4.0
+        subviews[1].clipsToBounds = true
     }
 }
