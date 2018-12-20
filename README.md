@@ -1,3 +1,8 @@
+# Smart Coach
+
+#### Screenshot:
+<img src="https://github.com/TongLin91/SmartCoach/blob/master/Smart%20Coach%20Simulator%20Screen%20Shot.png" width="400" height="866">
+
 #### Objective
 We need to implement the next iteration of the Stash Coach feature.  First step is to display to the user a list of achievements they can reach.  
 
