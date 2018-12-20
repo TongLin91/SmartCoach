@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */; };
+		0621BA2321C9B1D100A3399B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA2221C9B1D100A3399B /* Assets.xcassets */; };
+		0621BA2621C9B1D100A3399B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */; };
+		0621BA3121C9B1D100A3399B /* SmartCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3021C9B1D100A3399B /* SmartCoachTests.swift */; };
+		0621BA3E21C9B2CA00A3399B /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */; };
+		0621BA4021C9B32100A3399B /* CoachRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA3F21C9B32100A3399B /* CoachRouter.swift */; };
+		0621BA4221C9B37D00A3399B /* CoachInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4121C9B37D00A3399B /* CoachInterector.swift */; };
+		0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */; };
+		0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */; };
+		0621BA4821C9B44B00A3399B /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA4721C9B44B00A3399B /* achievements.json */; };
+		0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA4C21C9B76B00A3399B /* AchievementModel.swift */; };
+		0621BA4F21C9B81600A3399B /* CoachViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */; };
+		0621BA5221C9C11B00A3399B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5121C9C11B00A3399B /* NetworkManager.swift */; };
+		0621BA5421C9F42B00A3399B /* SCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5321C9F42B00A3399B /* SCLogger.swift */; };
+		0621BA5621C9FD0200A3399B /* AchievementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5521C9FD0200A3399B /* AchievementResponse.swift */; };
+		0621BA5821C9FFE100A3399B /* CoachDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5721C9FFE100A3399B /* CoachDataSource.swift */; };
+		0621BA5A21CA033500A3399B /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */; };
+		0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */; };
+		0621BA5F21CA10D300A3399B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA5E21CA10D300A3399B /* MainNavigationController.swift */; };
+		0621BA6121CA110500A3399B /* UIColor+SC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6021CA110500A3399B /* UIColor+SC.swift */; };
+		0621BA6321CA147F00A3399B /* UIView+SC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6221CA147F00A3399B /* UIView+SC.swift */; };
+		0621BA6621CAAE4A00A3399B /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6521CAAE4A00A3399B /* AppDelegateTests.swift */; };
+		0621BA6B21CAFBE900A3399B /* UIColor+SCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6A21CAFBE900A3399B /* UIColor+SCTests.swift */; };
+		0621BA6F21CB01C600A3399B /* MockAchievementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA6E21CB01C600A3399B /* MockAchievementResponse.swift */; };
+		0621BA7221CB037700A3399B /* AchievementResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7121CB037700A3399B /* AchievementResponseTests.swift */; };
+		0621BA7421CB04ED00A3399B /* AchievementModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7321CB04ED00A3399B /* AchievementModelTests.swift */; };
+		0621BA7621CB068500A3399B /* CoachRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7521CB068500A3399B /* CoachRouterTests.swift */; };
+		0621BA7821CB099C00A3399B /* CoachViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */; };
+		0621BA7A21CB0FCA00A3399B /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7921CB0FCA00A3399B /* NetworkManagerTests.swift */; };
+		0621BA7E21CB295100A3399B /* SCLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7D21CB295100A3399B /* SCLoggerTests.swift */; };
+		0621BA8021CB29E500A3399B /* SCProgressViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7F21CB29E500A3399B /* SCProgressViewTests.swift */; };
+		0621BA8221CB2E2F00A3399B /* UIView+SCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA8121CB2E2F00A3399B /* UIView+SCTests.swift */; };
+		0621BA8521CB33C200A3399B /* AchievementCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA8421CB33C200A3399B /* AchievementCollectionViewCellTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0621BA2D21C9B1D100A3399B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0621BA1021C9B1CE00A3399B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0621BA1721C9B1CE00A3399B;
+			remoteInfo = SmartCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0621BA1821C9B1CE00A3399B /* SmartCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0621BA2221C9B1D100A3399B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0621BA2521C9B1D100A3399B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0621BA2721C9B1D100A3399B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0621BA2C21C9B1D100A3399B /* SmartCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0621BA3021C9B1D100A3399B /* SmartCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCoachTests.swift; sourceTree = "<group>"; };
+		0621BA3221C9B1D100A3399B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		0621BA3F21C9B32100A3399B /* CoachRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRouter.swift; sourceTree = "<group>"; };
+		0621BA4121C9B37D00A3399B /* CoachInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachInterector.swift; sourceTree = "<group>"; };
+		0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenter.swift; sourceTree = "<group>"; };
+		0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachProtocols.swift; sourceTree = "<group>"; };
+		0621BA4721C9B44B00A3399B /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = SOURCE_ROOT; };
+		0621BA4C21C9B76B00A3399B /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
+		0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoachViewController.storyboard; sourceTree = "<group>"; };
+		0621BA5121C9C11B00A3399B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0621BA5321C9F42B00A3399B /* SCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLogger.swift; sourceTree = "<group>"; };
+		0621BA5521C9FD0200A3399B /* AchievementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementResponse.swift; sourceTree = "<group>"; };
+		0621BA5721C9FFE100A3399B /* CoachDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDataSource.swift; sourceTree = "<group>"; };
+		0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressView.swift; sourceTree = "<group>"; };
+		0621BA5E21CA10D300A3399B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		0621BA6021CA110500A3399B /* UIColor+SC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SC.swift"; sourceTree = "<group>"; };
+		0621BA6221CA147F00A3399B /* UIView+SC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SC.swift"; sourceTree = "<group>"; };
+		0621BA6521CAAE4A00A3399B /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		0621BA6A21CAFBE900A3399B /* UIColor+SCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SCTests.swift"; sourceTree = "<group>"; };
+		0621BA6E21CB01C600A3399B /* MockAchievementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementResponse.swift; sourceTree = "<group>"; };
+		0621BA7121CB037700A3399B /* AchievementResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementResponseTests.swift; sourceTree = "<group>"; };
+		0621BA7321CB04ED00A3399B /* AchievementModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModelTests.swift; sourceTree = "<group>"; };
+		0621BA7521CB068500A3399B /* CoachRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRouterTests.swift; sourceTree = "<group>"; };
+		0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewControllerTests.swift; sourceTree = "<group>"; };
+		0621BA7921CB0FCA00A3399B /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		0621BA7D21CB295100A3399B /* SCLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLoggerTests.swift; sourceTree = "<group>"; };
+		0621BA7F21CB29E500A3399B /* SCProgressViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressViewTests.swift; sourceTree = "<group>"; };
+		0621BA8121CB2E2F00A3399B /* UIView+SCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SCTests.swift"; sourceTree = "<group>"; };
+		0621BA8421CB33C200A3399B /* AchievementCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCellTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0621BA1521C9B1CE00A3399B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0621BA2921C9B1D100A3399B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0621BA0F21C9B1CE00A3399B = {
+			isa = PBXGroup;
+			children = (
+				0621BA1A21C9B1CE00A3399B /* SmartCoach */,
+				0621BA2F21C9B1D100A3399B /* SmartCoachTests */,
+				0621BA1921C9B1CE00A3399B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0621BA1921C9B1CE00A3399B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA1821C9B1CE00A3399B /* SmartCoach.app */,
+				0621BA2C21C9B1D100A3399B /* SmartCoachTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0621BA1A21C9B1CE00A3399B /* SmartCoach */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA1B21C9B1CE00A3399B /* AppDelegate.swift */,
+				0621BA5D21CA10BB00A3399B /* Infrastructures */,
+				0621BA5021C9C0FC00A3399B /* Configurations */,
+				0621BA3B21C9B26800A3399B /* Modules */,
+				0621BA4721C9B44B00A3399B /* achievements.json */,
+				0621BA2221C9B1D100A3399B /* Assets.xcassets */,
+				0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */,
+				0621BA2721C9B1D100A3399B /* Info.plist */,
+			);
+			path = SmartCoach;
+			sourceTree = "<group>";
+		};
+		0621BA2F21C9B1D100A3399B /* SmartCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA3021C9B1D100A3399B /* SmartCoachTests.swift */,
+				0621BA6521CAAE4A00A3399B /* AppDelegateTests.swift */,
+				0621BA6921CAFB2600A3399B /* Infrastructures */,
+				0621BA6821CAFB1900A3399B /* Configurations */,
+				0621BA6721CAFB0800A3399B /* Modules */,
+				0621BA3221C9B1D100A3399B /* Info.plist */,
+			);
+			path = SmartCoachTests;
+			sourceTree = "<group>";
+		};
+		0621BA3B21C9B26800A3399B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA3C21C9B29300A3399B /* Coach */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0621BA3C21C9B29300A3399B /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA4921C9B73400A3399B /* Models */,
+				0621BA6421CA9B3900A3399B /* Cell */,
+				0621BA3F21C9B32100A3399B /* CoachRouter.swift */,
+				0621BA3D21C9B2CA00A3399B /* CoachViewController.swift */,
+				0621BA4E21C9B81600A3399B /* CoachViewController.storyboard */,
+				0621BA4321C9B3BA00A3399B /* CoachPresenter.swift */,
+				0621BA4121C9B37D00A3399B /* CoachInterector.swift */,
+				0621BA5721C9FFE100A3399B /* CoachDataSource.swift */,
+				0621BA4521C9B3FB00A3399B /* CoachProtocols.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		0621BA4921C9B73400A3399B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5521C9FD0200A3399B /* AchievementResponse.swift */,
+				0621BA4C21C9B76B00A3399B /* AchievementModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0621BA5021C9C0FC00A3399B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5121C9C11B00A3399B /* NetworkManager.swift */,
+				0621BA5321C9F42B00A3399B /* SCLogger.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		0621BA5D21CA10BB00A3399B /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5B21CA0F1C00A3399B /* SCProgressView.swift */,
+				0621BA5E21CA10D300A3399B /* MainNavigationController.swift */,
+				0621BA6021CA110500A3399B /* UIColor+SC.swift */,
+				0621BA6221CA147F00A3399B /* UIView+SC.swift */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		0621BA6421CA9B3900A3399B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA5921CA033500A3399B /* AchievementCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0621BA6721CAFB0800A3399B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA6C21CB019500A3399B /* Coach */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0621BA6821CAFB1900A3399B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA7921CB0FCA00A3399B /* NetworkManagerTests.swift */,
+				0621BA7D21CB295100A3399B /* SCLoggerTests.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		0621BA6921CAFB2600A3399B /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA7F21CB29E500A3399B /* SCProgressViewTests.swift */,
+				0621BA6A21CAFBE900A3399B /* UIColor+SCTests.swift */,
+				0621BA8121CB2E2F00A3399B /* UIView+SCTests.swift */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		0621BA6C21CB019500A3399B /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA6D21CB01A900A3399B /* Mock */,
+				0621BA7121CB037700A3399B /* AchievementResponseTests.swift */,
+				0621BA7321CB04ED00A3399B /* AchievementModelTests.swift */,
+				0621BA8421CB33C200A3399B /* AchievementCollectionViewCellTests.swift */,
+				0621BA7521CB068500A3399B /* CoachRouterTests.swift */,
+				0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		0621BA6D21CB01A900A3399B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0621BA6E21CB01C600A3399B /* MockAchievementResponse.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0621BA1721C9B1CE00A3399B /* SmartCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0621BA3521C9B1D100A3399B /* Build configuration list for PBXNativeTarget "SmartCoach" */;
+			buildPhases = (
+				0621BA1421C9B1CE00A3399B /* Sources */,
+				0621BA1521C9B1CE00A3399B /* Frameworks */,
+				0621BA1621C9B1CE00A3399B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCoach;
+			productName = SmartCoach;
+			productReference = 0621BA1821C9B1CE00A3399B /* SmartCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0621BA2B21C9B1D100A3399B /* SmartCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0621BA3821C9B1D100A3399B /* Build configuration list for PBXNativeTarget "SmartCoachTests" */;
+			buildPhases = (
+				0621BA2821C9B1D100A3399B /* Sources */,
+				0621BA2921C9B1D100A3399B /* Frameworks */,
+				0621BA2A21C9B1D100A3399B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0621BA2E21C9B1D100A3399B /* PBXTargetDependency */,
+			);
+			name = SmartCoachTests;
+			productName = SmartCoachTests;
+			productReference = 0621BA2C21C9B1D100A3399B /* SmartCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0621BA1021C9B1CE00A3399B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TongL;
+				TargetAttributes = {
+					0621BA1721C9B1CE00A3399B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					0621BA2B21C9B1D100A3399B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 0621BA1721C9B1CE00A3399B;
+					};
+				};
+			};
+			buildConfigurationList = 0621BA1321C9B1CE00A3399B /* Build configuration list for PBXProject "SmartCoach" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0621BA0F21C9B1CE00A3399B;
+			productRefGroup = 0621BA1921C9B1CE00A3399B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0621BA1721C9B1CE00A3399B /* SmartCoach */,
+				0621BA2B21C9B1D100A3399B /* SmartCoachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0621BA1621C9B1CE00A3399B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0621BA2621C9B1D100A3399B /* LaunchScreen.storyboard in Resources */,
+				0621BA4821C9B44B00A3399B /* achievements.json in Resources */,
+				0621BA4F21C9B81600A3399B /* CoachViewController.storyboard in Resources */,
+				0621BA2321C9B1D100A3399B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0621BA2A21C9B1D100A3399B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0621BA1421C9B1CE00A3399B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0621BA6121CA110500A3399B /* UIColor+SC.swift in Sources */,
+				0621BA5421C9F42B00A3399B /* SCLogger.swift in Sources */,
+				0621BA5221C9C11B00A3399B /* NetworkManager.swift in Sources */,
+				0621BA4621C9B3FB00A3399B /* CoachProtocols.swift in Sources */,
+				0621BA6321CA147F00A3399B /* UIView+SC.swift in Sources */,
+				0621BA1C21C9B1CE00A3399B /* AppDelegate.swift in Sources */,
+				0621BA5F21CA10D300A3399B /* MainNavigationController.swift in Sources */,
+				0621BA5621C9FD0200A3399B /* AchievementResponse.swift in Sources */,
+				0621BA4421C9B3BA00A3399B /* CoachPresenter.swift in Sources */,
+				0621BA5C21CA0F1C00A3399B /* SCProgressView.swift in Sources */,
+				0621BA4D21C9B76B00A3399B /* AchievementModel.swift in Sources */,
+				0621BA4221C9B37D00A3399B /* CoachInterector.swift in Sources */,
+				0621BA5821C9FFE100A3399B /* CoachDataSource.swift in Sources */,
+				0621BA3E21C9B2CA00A3399B /* CoachViewController.swift in Sources */,
+				0621BA5A21CA033500A3399B /* AchievementCollectionViewCell.swift in Sources */,
+				0621BA4021C9B32100A3399B /* CoachRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0621BA2821C9B1D100A3399B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0621BA7E21CB295100A3399B /* SCLoggerTests.swift in Sources */,
+				0621BA7A21CB0FCA00A3399B /* NetworkManagerTests.swift in Sources */,
+				0621BA6F21CB01C600A3399B /* MockAchievementResponse.swift in Sources */,
+				0621BA8221CB2E2F00A3399B /* UIView+SCTests.swift in Sources */,
+				0621BA7821CB099C00A3399B /* CoachViewControllerTests.swift in Sources */,
+				0621BA7421CB04ED00A3399B /* AchievementModelTests.swift in Sources */,
+				0621BA8021CB29E500A3399B /* SCProgressViewTests.swift in Sources */,
+				0621BA6B21CAFBE900A3399B /* UIColor+SCTests.swift in Sources */,
+				0621BA7621CB068500A3399B /* CoachRouterTests.swift in Sources */,
+				0621BA6621CAAE4A00A3399B /* AppDelegateTests.swift in Sources */,
+				0621BA8521CB33C200A3399B /* AchievementCollectionViewCellTests.swift in Sources */,
+				0621BA7221CB037700A3399B /* AchievementResponseTests.swift in Sources */,
+				0621BA3121C9B1D100A3399B /* SmartCoachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0621BA2E21C9B1D100A3399B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0621BA1721C9B1CE00A3399B /* SmartCoach */;
+			targetProxy = 0621BA2D21C9B1D100A3399B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0621BA2421C9B1D100A3399B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0621BA2521C9B1D100A3399B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0621BA3321C9B1D100A3399B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0621BA3421C9B1D100A3399B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0621BA3621C9B1D100A3399B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
+				INFOPLIST_FILE = SmartCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.SmartCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0621BA3721C9B1D100A3399B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
+				INFOPLIST_FILE = SmartCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.SmartCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0621BA3921C9B1D100A3399B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
+				INFOPLIST_FILE = SmartCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.SmartCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCoach.app/SmartCoach";
+			};
+			name = Debug;
+		};
+		0621BA3A21C9B1D100A3399B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
+				INFOPLIST_FILE = SmartCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.SmartCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCoach.app/SmartCoach";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0621BA1321C9B1CE00A3399B /* Build configuration list for PBXProject "SmartCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0621BA3321C9B1D100A3399B /* Debug */,
+				0621BA3421C9B1D100A3399B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0621BA3521C9B1D100A3399B /* Build configuration list for PBXNativeTarget "SmartCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0621BA3621C9B1D100A3399B /* Debug */,
+				0621BA3721C9B1D100A3399B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0621BA3821C9B1D100A3399B /* Build configuration list for PBXNativeTarget "SmartCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0621BA3921C9B1D100A3399B /* Debug */,
+				0621BA3A21C9B1D100A3399B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0621BA1021C9B1CE00A3399B /* Project object */;
+}
