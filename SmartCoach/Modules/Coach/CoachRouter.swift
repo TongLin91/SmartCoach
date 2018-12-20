@@ -9,7 +9,7 @@
 import UIKit
 
 final class CoachRouter {
-    static private var storyboard: UIStoryboard = UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
+    static private var storyboard = UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
     
     class func makeCoachViewController() -> UIViewController {
         let coachVC = storyboard.instantiateInitialViewController() as! CoachViewController
