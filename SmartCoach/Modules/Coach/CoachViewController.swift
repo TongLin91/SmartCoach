@@ -31,6 +31,7 @@ class CoachViewController: UIViewController {
     }
     
     // MARK: - private
+    
     private func setup() {
         navigationItem.title = "Smart Investing"
         navigationItem.leftBarButtonItem = backBarButton

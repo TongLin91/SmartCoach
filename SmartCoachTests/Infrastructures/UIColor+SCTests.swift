@@ -63,5 +63,4 @@ class UIColor_SCTests: XCTestCase {
         XCTAssertEqual(String(format: "%.3f", color.blue), "0.000")
         XCTAssertTrue(color.alpha == 0.5)
     }
-
 }

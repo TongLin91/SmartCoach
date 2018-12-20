@@ -47,6 +47,5 @@ class AchievementCollectionViewCellTests: XCTestCase {
         XCTAssertEqual(cell?.currentProgressLabel.text, "\(achievement.progress) pts")
         XCTAssertEqual(cell?.totalProgressLabel.text, "\(achievement.total) pts")
         XCTAssertEqual(cell?.achievementProgressView.progress, Float(achievement.progress)/Float(achievement.total))
-        
     }
 }

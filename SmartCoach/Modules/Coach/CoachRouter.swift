@@ -9,6 +9,7 @@
 import UIKit
 
 final class CoachRouter {
+    
     static private var storyboard = UIStoryboard(name:"CoachViewController",bundle: Bundle.main)
     
     class func makeCoachViewController() -> UIViewController {

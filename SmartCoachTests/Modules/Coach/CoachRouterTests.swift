@@ -34,5 +34,4 @@ class CoachRouterTests: XCTestCase {
         XCTAssertTrue(coachNC is MainNavigationController)
         XCTAssertTrue(coachNC.topViewController is CoachViewController)
     }
-
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class SCProgressView: UIProgressView {
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         

@@ -36,7 +36,6 @@
 		0621BA7621CB068500A3399B /* CoachRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7521CB068500A3399B /* CoachRouterTests.swift */; };
 		0621BA7821CB099C00A3399B /* CoachViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */; };
 		0621BA7A21CB0FCA00A3399B /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7921CB0FCA00A3399B /* NetworkManagerTests.swift */; };
-		0621BA7C21CB28EC00A3399B /* CoachPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7B21CB28EC00A3399B /* CoachPresenterTests.swift */; };
 		0621BA7E21CB295100A3399B /* SCLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7D21CB295100A3399B /* SCLoggerTests.swift */; };
 		0621BA8021CB29E500A3399B /* SCProgressViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA7F21CB29E500A3399B /* SCProgressViewTests.swift */; };
 		0621BA8221CB2E2F00A3399B /* UIView+SCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621BA8121CB2E2F00A3399B /* UIView+SCTests.swift */; };
@@ -87,7 +86,6 @@
 		0621BA7521CB068500A3399B /* CoachRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRouterTests.swift; sourceTree = "<group>"; };
 		0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewControllerTests.swift; sourceTree = "<group>"; };
 		0621BA7921CB0FCA00A3399B /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
-		0621BA7B21CB28EC00A3399B /* CoachPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenterTests.swift; sourceTree = "<group>"; };
 		0621BA7D21CB295100A3399B /* SCLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLoggerTests.swift; sourceTree = "<group>"; };
 		0621BA7F21CB29E500A3399B /* SCProgressViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressViewTests.swift; sourceTree = "<group>"; };
 		0621BA8121CB2E2F00A3399B /* UIView+SCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SCTests.swift"; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				0621BA8421CB33C200A3399B /* AchievementCollectionViewCellTests.swift */,
 				0621BA7521CB068500A3399B /* CoachRouterTests.swift */,
 				0621BA7721CB099C00A3399B /* CoachViewControllerTests.swift */,
-				0621BA7B21CB28EC00A3399B /* CoachPresenterTests.swift */,
 			);
 			path = Coach;
 			sourceTree = "<group>";
@@ -406,7 +403,6 @@
 				0621BA8521CB33C200A3399B /* AchievementCollectionViewCellTests.swift in Sources */,
 				0621BA7221CB037700A3399B /* AchievementResponseTests.swift in Sources */,
 				0621BA3121C9B1D100A3399B /* SmartCoachTests.swift in Sources */,
-				0621BA7C21CB28EC00A3399B /* CoachPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
